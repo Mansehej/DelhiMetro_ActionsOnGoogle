@@ -1,0 +1,1501 @@
+[
+  {
+    "value": "AIIMS",
+    "synonyms": [
+      "AIIMS",
+      "All India Medical Institute"
+    ]
+  },
+  {
+    "value": "Adarsh Nagar",
+    "synonyms": [
+      "Adarsh Nagar"
+    ]
+  },
+  {
+    "value": "Airport",
+    "synonyms": [
+      "Airport",
+      "IGI",
+      "IGI Airport",
+      "IGI Airport T3",
+      "IGI Airport Terminal 3",
+      "Indira Gandhi International Airport",
+      "Indira Gandhi International Airport T3",
+      "Indira Gandhi International Airport Terminal 3",
+      "T3",
+      "Terminal 3"
+    ]
+  },
+  {
+    "value": "Akshardham",
+    "synonyms": [
+      "Akshardham"
+    ]
+  },
+  {
+    "value": "Anand Vihar",
+    "synonyms": [
+      "Anand Vihar ISBT",
+      "ISBT"
+    ]
+  },
+  {
+    "value": "Arjan Garh",
+    "synonyms": [
+      "Arjan Garh"
+    ]
+  },
+  {
+    "value": "Arthala",
+    "synonyms": [
+      "Arthala"
+    ]
+  },
+  {
+    "value": "Ashok Park Main",
+    "synonyms": [
+      "Ashok Park",
+      "Ashok Park Main"
+    ]
+  },
+  {
+    "value": "Ashram",
+    "synonyms": [
+      "Ashram"
+    ]
+  },
+  {
+    "value": "Azadpur",
+    "synonyms": [
+      "Azadpur"
+    ]
+  },
+  {
+    "value": "Badarpur Border",
+    "synonyms": [
+      "Badarpur",
+      "Badarpur Border"
+    ]
+  },
+  {
+    "value": "Badkhal Mor",
+    "synonyms": [
+      "Badhkal",
+      "Badkhal Mor"
+    ]
+  },
+  {
+    "value": "Bahadurgarh City",
+    "synonyms": [
+      "Bahadurgarh",
+      "Bahadurgarh City"
+    ]
+  },
+  {
+    "value": "Barakhambha Road",
+    "synonyms": [
+      "Barakhamba",
+      "Barakhambha",
+      "Barakhambha Road"
+    ]
+  },
+  {
+    "value": "Bata Chowk",
+    "synonyms": [
+      "Bata Chowk"
+    ]
+  },
+  {
+    "value": "Bhikaji Cama Place",
+    "synonyms": [
+      "Bhikaji Cama",
+      "Bhikaji Cama Place"
+    ]
+  },
+  {
+    "value": "Botanical Garden",
+    "synonyms": [
+      "Botanical Garden"
+    ]
+  },
+  {
+    "value": "Brigadier Hoshiyar Singh",
+    "synonyms": [
+      "Brigadier Hoshiyar Singh",
+      "Brigadier Singh",
+      "Hoshiyar Singh"
+    ]
+  },
+  {
+    "value": "Central Secretariat",
+    "synonyms": [
+      "Central Secretariat"
+    ]
+  },
+  {
+    "value": "Chandni Chowk",
+    "synonyms": [
+      "Chandni Chowk"
+    ]
+  },
+  {
+    "value": "Chawri Bazar",
+    "synonyms": [
+      "Chawri Bazar"
+    ]
+  },
+  {
+    "value": "Chhatarpur",
+    "synonyms": [
+      "Chhatarpur"
+    ]
+  },
+  {
+    "value": "Chirag Delhi",
+    "synonyms": [
+      "Chirag",
+      "Chirag Delhi"
+    ]
+  },
+  {
+    "value": "Civil Lines",
+    "synonyms": [
+      "Civil Lines"
+    ]
+  },
+  {
+    "value": "Dabri Mor-Janakpuri South",
+    "synonyms": [
+      "Dabri",
+      "Dabri Mor",
+      "Janakpuri South"
+    ]
+  },
+  {
+    "value": "Dashrath Puri",
+    "synonyms": [
+      "Dashrath Puri",
+      "Dashrathpuri",
+      "Dashratpuri"
+    ]
+  },
+  {
+    "value": "Delhi Aerocity",
+    "synonyms": [
+      "Aerocity",
+      "Delhi Aerocity"
+    ]
+  },
+  {
+    "value": "Delhi Cantonment",
+    "synonyms": [
+      "Cantonment",
+      "Cantt",
+      "Delhi Cantonment",
+      "Delhi Cantt"
+    ]
+  },
+  {
+    "value": "Delhi Gate",
+    "synonyms": [
+      "Delhi Gate"
+    ]
+  },
+  {
+    "value": "Dhaula Kuan",
+    "synonyms": [
+      "Dhaula Kuan"
+    ]
+  },
+  {
+    "value": "Dilshad Garden",
+    "synonyms": [
+      "Dilshad Garden"
+    ]
+  },
+  {
+    "value": "Durgabai Deshmukh South Campus",
+    "synonyms": [
+      "Durgabai Dekhmukh",
+      "Durgabai Deshmukh South Campus",
+      "South Campus"
+    ]
+  },
+  {
+    "value": "Dwarka",
+    "synonyms": [
+      "Dwarka"
+    ]
+  },
+  {
+    "value": "Dwarka Mor",
+    "synonyms": [
+      "Dwarka Mor"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 10",
+    "synonyms": [
+      "Dwarka Sector 10"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 11",
+    "synonyms": [
+      "Dwarka Sector 11"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 12",
+    "synonyms": [
+      "Dwarka Sector 12"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 13",
+    "synonyms": [
+      "Dwarka Sector 13"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 14",
+    "synonyms": [
+      "Dwarka Sector 14"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 21",
+    "synonyms": [
+      "Dwarka Sector 21"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 8",
+    "synonyms": [
+      "Dwarka Sector 8"
+    ]
+  },
+  {
+    "value": "Dwarka Sector 9",
+    "synonyms": [
+      "Dwarka Sector 9"
+    ]
+  },
+  {
+    "value": "ESI Hospital",
+    "synonyms": [
+      "ESI",
+      "ESI Basaidarpur",
+      "ESI Hospital"
+    ]
+  },
+  {
+    "value": "East Azad Nagar",
+    "synonyms": [
+      "Azad Nagar East",
+      "East Azad Nagar"
+    ]
+  },
+  {
+    "value": "East Vinod Nagar – Mayur Vihar-II",
+    "synonyms": [
+      "East Vinod Nagar",
+      "East Vinod Nagar – Mayur Vihar-II",
+      "Mayur Vihar 2",
+      "Mayur Vihar-II"
+    ]
+  },
+  {
+    "value": "Escorts Mujesar",
+    "synonyms": [
+      "Escorts",
+      "Escorts Mujesar"
+    ]
+  },
+  {
+    "value": "GTB Nagar",
+    "synonyms": [
+      "GTB",
+      "GTB Nagar",
+      "Guru Tegh Bahadur Nagar"
+    ]
+  },
+  {
+    "value": "Ghevra",
+    "synonyms": [
+      "Ghevra"
+    ]
+  },
+  {
+    "value": "Ghitorni",
+    "synonyms": [
+      "Ghitorni"
+    ]
+  },
+  {
+    "value": "Gokulpuri",
+    "synonyms": [
+      "Gokulpuri"
+    ]
+  },
+  {
+    "value": "Golf Course",
+    "synonyms": [
+      "Golf Course"
+    ]
+  },
+  {
+    "value": "Govind Puri",
+    "synonyms": [
+      "Govind Puri"
+    ]
+  },
+  {
+    "value": "Greater Kailash",
+    "synonyms": [
+      "Greater Kailash"
+    ]
+  },
+  {
+    "value": "Green Park",
+    "synonyms": [
+      "Green Park"
+    ]
+  },
+  {
+    "value": "Guru Dronacharya",
+    "synonyms": [
+      "Dronacharya",
+      "Guru Dronacharya"
+    ]
+  },
+  {
+    "value": "HUDA City Centre",
+    "synonyms": [
+      "HUDA",
+      "HUDA City Centre"
+    ]
+  },
+  {
+    "value": "Haiderpur",
+    "synonyms": [
+      "Badli Mor",
+      "Haiderpur"
+    ]
+  },
+  {
+    "value": "Harkesh Nagar Okhla",
+    "synonyms": [
+      "Harkesh Nagar",
+      "Harkesh Nagar Okhla"
+    ]
+  },
+  {
+    "value": "Hauz Khas",
+    "synonyms": [
+      "Hauz Khas"
+    ]
+  },
+  {
+    "value": "Hazrat Nizamuddin",
+    "synonyms": [
+      "Hazrat Nizamuddin",
+      "Nizamuddin",
+      "Nizamuddin Station",
+      "Sarai Kale Khan"
+    ]
+  },
+  {
+    "value": "Hindon",
+    "synonyms": [
+      "Hindon"
+    ]
+  },
+  {
+    "value": "IFFCO Chowk",
+    "synonyms": [
+      "IFFCO",
+      "IFFCO Chowk"
+    ]
+  },
+  {
+    "value": "IIT Delhi",
+    "synonyms": [
+      "IIT",
+      "IIT Delhi"
+    ]
+  },
+  {
+    "value": "INA",
+    "synonyms": [
+      "I.N.A.",
+      "INA"
+    ]
+  },
+  {
+    "value": "IP Extension",
+    "synonyms": [
+      "I.P. Extension",
+      "IP Extension",
+      "Indraprastha Extension"
+    ]
+  },
+  {
+    "value": "ITO",
+    "synonyms": [
+      "I.T.O",
+      "ITO"
+    ]
+  },
+  {
+    "value": "Inderlok",
+    "synonyms": [
+      "Inderlok"
+    ]
+  },
+  {
+    "value": "Indraprastha",
+    "synonyms": [
+      "Indraprastha"
+    ]
+  },
+  {
+    "value": "Jaffrabad",
+    "synonyms": [
+      "Jaffrabad"
+    ]
+  },
+  {
+    "value": "Jahangirpuri",
+    "synonyms": [
+      "Jahangirpuri"
+    ]
+  },
+  {
+    "value": "Jama Masjid",
+    "synonyms": [
+      "Jama Masjid"
+    ]
+  },
+  {
+    "value": "Jamia Millia Islamia",
+    "synonyms": [
+      "Jamia Millia",
+      "Jamia Millia Islamia"
+    ]
+  },
+  {
+    "value": "Janakpuri East",
+    "synonyms": [
+      "Janakpuri East"
+    ]
+  },
+  {
+    "value": "Janakpuri West",
+    "synonyms": [
+      "Janakpuri",
+      "Janakpuri West"
+    ]
+  },
+  {
+    "value": "Jangpura",
+    "synonyms": [
+      "Jangpura"
+    ]
+  },
+  {
+    "value": "Janpath",
+    "synonyms": [
+      "Janpath"
+    ]
+  },
+  {
+    "value": "Jasola Apollo",
+    "synonyms": [
+      "Apollo",
+      "Jasola",
+      "Jasola Apollo"
+    ]
+  },
+  {
+    "value": "Jasola Vihar Shaheen Bagh",
+    "synonyms": [
+      "Jasola Vihar",
+      "Jasola Vihar Shaheen Bagh",
+      "Shaheen Bagh"
+    ]
+  },
+  {
+    "value": "Jawaharlal Nehru Stadium",
+    "synonyms": [
+      "Jawaharlal Nehru Stadium"
+    ]
+  },
+  {
+    "value": "Jhandewalan",
+    "synonyms": [
+      "Jhandewalan"
+    ]
+  },
+  {
+    "value": "Jhilmil",
+    "synonyms": [
+      "Jhilmil"
+    ]
+  },
+  {
+    "value": "Johari Enclave",
+    "synonyms": [
+      "Johari Enclave"
+    ]
+  },
+  {
+    "value": "Jor Bagh",
+    "synonyms": [
+      "Jor Bagh",
+      "Jorbagh"
+    ]
+  },
+  {
+    "value": "Kailash Colony",
+    "synonyms": [
+      "Kailash Colony"
+    ]
+  },
+  {
+    "value": "Kalindi Kunj",
+    "synonyms": [
+      "Kalindi Kunj"
+    ]
+  },
+  {
+    "value": "Kalkaji Mandir",
+    "synonyms": [
+      "Kalkaji Mandir"
+    ]
+  },
+  {
+    "value": "Kanhaiya Nagar",
+    "synonyms": [
+      "Kanhaiya Nagar"
+    ]
+  },
+  {
+    "value": "Karkarduma",
+    "synonyms": [
+      "Karkardooma",
+      "Karkarduma"
+    ]
+  },
+  {
+    "value": "Karkarduma Court",
+    "synonyms": [
+      "Karkardooma Court",
+      "Karkarduma Court"
+    ]
+  },
+  {
+    "value": "Karol Bagh",
+    "synonyms": [
+      "Karol Bagh"
+    ]
+  },
+  {
+    "value": "Kashmere Gate",
+    "synonyms": [
+      "Kashmere Gate"
+    ]
+  },
+  {
+    "value": "Kaushambi",
+    "synonyms": [
+      "Kaushambi"
+    ]
+  },
+  {
+    "value": "Keshav Puram",
+    "synonyms": [
+      "Keshav Puram"
+    ]
+  },
+  {
+    "value": "Khan Market",
+    "synonyms": [
+      "Khan Market"
+    ]
+  },
+  {
+    "value": "Kirti Nagar",
+    "synonyms": [
+      "Kirti Nagar"
+    ]
+  },
+  {
+    "value": "Kohat Enclave",
+    "synonyms": [
+      "Kohat Enclave"
+    ]
+  },
+  {
+    "value": "Krishna Nagar",
+    "synonyms": [
+      "Krishna Nagar"
+    ]
+  },
+  {
+    "value": "Lajpat Nagar",
+    "synonyms": [
+      "Lajpat Nagar"
+    ]
+  },
+  {
+    "value": "Lal Qila",
+    "synonyms": [
+      "Lal Qila"
+    ]
+  },
+  {
+    "value": "Laxmi Nagar",
+    "synonyms": [
+      "Lakshmi Nagar",
+      "Laxmi Nagar"
+    ]
+  },
+  {
+    "value": "Lok Kalyan Marg",
+    "synonyms": [
+      "Kalyan Marg",
+      "Lok Kalyan",
+      "Lok Kalyan Marg"
+    ]
+  },
+  {
+    "value": "MG Road",
+    "synonyms": [
+      "MG Road",
+      "Mahatma Gandhi Road"
+    ]
+  },
+  {
+    "value": "Madipur",
+    "synonyms": [
+      "Madipur"
+    ]
+  },
+  {
+    "value": "Maharaja Surajmal Stadium",
+    "synonyms": [
+      "Maharaja Surajmal Stadium",
+      "Surajmal Stadium"
+    ]
+  },
+  {
+    "value": "Majlis Park",
+    "synonyms": [
+      "Majlis",
+      "Majlis Park"
+    ]
+  },
+  {
+    "value": "Major Mohit Sharma",
+    "synonyms": [
+      "Major Mohit Sharma",
+      "Major Sharma",
+      "Mohit Sharma"
+    ]
+  },
+  {
+    "value": "Malviya Nagar",
+    "synonyms": [
+      "Malviya Nagar"
+    ]
+  },
+  {
+    "value": "Mandawali – West Vinod Nagar",
+    "synonyms": [
+      "Mandawali",
+      "Mandawali – West Vinod Nagar",
+      "West Vinod Nagar"
+    ]
+  },
+  {
+    "value": "Mandi House",
+    "synonyms": [
+      "Mandi House"
+    ]
+  },
+  {
+    "value": "Mansarovar Park",
+    "synonyms": [
+      "Mansarovar",
+      "Mansarovar Park"
+    ]
+  },
+  {
+    "value": "Maujpur-Babarpur",
+    "synonyms": [
+      "Babarpur",
+      "Maujpur",
+      "Maujpur-Babarpur"
+    ]
+  },
+  {
+    "value": "Mayapuri",
+    "synonyms": [
+      "Mayapuri"
+    ]
+  },
+  {
+    "value": "Mayur Vihar - I",
+    "synonyms": [
+      "Mayur Vihar - I",
+      "Mayur Vihar 1"
+    ]
+  },
+  {
+    "value": "Mayur Vihar Extension",
+    "synonyms": [
+      "Mayur Vihar Extension"
+    ]
+  },
+  {
+    "value": "Mayur Vihar Pocket I",
+    "synonyms": [
+      "Mayur Vihar Pocket 1",
+      "Mayur Vihar Pocket I"
+    ]
+  },
+  {
+    "value": "Mewala Maharajpur",
+    "synonyms": [
+      "Maharajpur",
+      "Mewala",
+      "Mewala Maharajpur"
+    ]
+  },
+  {
+    "value": "Model Town",
+    "synonyms": [
+      "Model Town"
+    ]
+  },
+  {
+    "value": "Mohan Estate",
+    "synonyms": [
+      "Mohan Estate"
+    ]
+  },
+  {
+    "value": "Mohan Nagar",
+    "synonyms": [
+      "Mohan Nagar"
+    ]
+  },
+  {
+    "value": "Moolchand",
+    "synonyms": [
+      "Moolchand"
+    ]
+  },
+  {
+    "value": "Moti Nagar",
+    "synonyms": [
+      "Moti Nagar"
+    ]
+  },
+  {
+    "value": "Mundka",
+    "synonyms": [
+      "Mundka"
+    ]
+  },
+  {
+    "value": "Mundka Industrial Area",
+    "synonyms": [
+      "M.I.A",
+      "MIA",
+      "Mundka Industrial Area"
+    ]
+  },
+  {
+    "value": "Munirka",
+    "synonyms": [
+      "Munirka"
+    ]
+  },
+  {
+    "value": "NHPC Chowk",
+    "synonyms": [
+      "NHPC",
+      "NHPC Chowk"
+    ]
+  },
+  {
+    "value": "Nangloi",
+    "synonyms": [
+      "Nangloi"
+    ]
+  },
+  {
+    "value": "Nangloi Railway station",
+    "synonyms": [
+      "Nangloi Railway station"
+    ]
+  },
+  {
+    "value": "Naraina Vihar",
+    "synonyms": [
+      "Naraina",
+      "Naraina Vihar"
+    ]
+  },
+  {
+    "value": "Nawada",
+    "synonyms": [
+      "Nawada"
+    ]
+  },
+  {
+    "value": "Neelam Chowk Ajronda",
+    "synonyms": [
+      "Ajronda",
+      "Neelam Chowk",
+      "Neelam Chowk Ajronda"
+    ]
+  },
+  {
+    "value": "Nehru Enclave",
+    "synonyms": [
+      "Nehru Enclave"
+    ]
+  },
+  {
+    "value": "Nehru Place",
+    "synonyms": [
+      "Nehru Place"
+    ]
+  },
+  {
+    "value": "Netaji Subhash Place",
+    "synonyms": [
+      "N.S.P.",
+      "NSP",
+      "Netaji Subhash Place"
+    ]
+  },
+  {
+    "value": "New Ashok Nagar",
+    "synonyms": [
+      "New Ashok Nagar"
+    ]
+  },
+  {
+    "value": "New Delhi",
+    "synonyms": [
+      "Delhi Railway Station",
+      "New Delhi",
+      "New Delhi Railway Station",
+      "Railway Station"
+    ]
+  },
+  {
+    "value": "Nirman Vihar",
+    "synonyms": [
+      "Nirman Vihar"
+    ]
+  },
+  {
+    "value": "Noida City Centre",
+    "synonyms": [
+      "Noida",
+      "Noida City Centre"
+    ]
+  },
+  {
+    "value": "Noida Electronic City",
+    "synonyms": [
+      "Noida Electronic City"
+    ]
+  },
+  {
+    "value": "Noida Sector 15",
+    "synonyms": [
+      "Noida Sector 15"
+    ]
+  },
+  {
+    "value": "Noida Sector 16",
+    "synonyms": [
+      "Noida Sector 16"
+    ]
+  },
+  {
+    "value": "Noida Sector 18",
+    "synonyms": [
+      "Noida Sector 18"
+    ]
+  },
+  {
+    "value": "Noida Sector 34",
+    "synonyms": [
+      "Noida Sector 34"
+    ]
+  },
+  {
+    "value": "Noida Sector 52*",
+    "synonyms": [
+      "Noida Sector 52*"
+    ]
+  },
+  {
+    "value": "Noida Sector 59",
+    "synonyms": [
+      "Noida Sector 59"
+    ]
+  },
+  {
+    "value": "Noida Sector 61",
+    "synonyms": [
+      "Noida Sector 61"
+    ]
+  },
+  {
+    "value": "Noida Sector 62",
+    "synonyms": [
+      "Noida Sector 62"
+    ]
+  },
+  {
+    "value": "Okhla Bird Sanctuary",
+    "synonyms": [
+      "Bird Sanctuary",
+      "Okhla Bird Sanctuary"
+    ]
+  },
+  {
+    "value": "Okhla NSIC",
+    "synonyms": [
+      "Okhla NSIC"
+    ]
+  },
+  {
+    "value": "Okhla Vihar",
+    "synonyms": [
+      "Okhla Vihar"
+    ]
+  },
+  {
+    "value": "Old Faridabad",
+    "synonyms": [
+      "Old Faridabad"
+    ]
+  },
+  {
+    "value": "Palam",
+    "synonyms": [
+      "Palam"
+    ]
+  },
+  {
+    "value": "Panchsheel Park",
+    "synonyms": [
+      "Panchsheel Park"
+    ]
+  },
+  {
+    "value": "Pandit Shree Ram Sharma",
+    "synonyms": [
+      "Pandit Ram",
+      "Pandit Ram Sharma",
+      "Pandit Sharma",
+      "Pandit Shree Ram Sharma",
+      "Shree Ram",
+      "Shree Ram Sharma"
+    ]
+  },
+  {
+    "value": "Paschim Vihar East",
+    "synonyms": [
+      "Paschim Vihar East"
+    ]
+  },
+  {
+    "value": "Paschim Vihar West",
+    "synonyms": [
+      "Paschim Vihar West"
+    ]
+  },
+  {
+    "value": "Patel Chowk",
+    "synonyms": [
+      "Patel Chowk"
+    ]
+  },
+  {
+    "value": "Patel Nagar",
+    "synonyms": [
+      "Patel Nagar"
+    ]
+  },
+  {
+    "value": "Peera Garhi",
+    "synonyms": [
+      "Peera Garhi",
+      "Peeragadi",
+      "Peeragarhi",
+      "Peeragari"
+    ]
+  },
+  {
+    "value": "Pitam Pura",
+    "synonyms": [
+      "Pitam Pura",
+      "Pitampura"
+    ]
+  },
+  {
+    "value": "Pragati Maidan",
+    "synonyms": [
+      "Pragati Maidan"
+    ]
+  },
+  {
+    "value": "Pratap Nagar",
+    "synonyms": [
+      "Pratap Nagar"
+    ]
+  },
+  {
+    "value": "Preet Vihar",
+    "synonyms": [
+      "Preet Vihar"
+    ]
+  },
+  {
+    "value": "Pul Bangash",
+    "synonyms": [
+      "Pul Bangash"
+    ]
+  },
+  {
+    "value": "Punjabi Bagh",
+    "synonyms": [
+      "Punjabi Bagh"
+    ]
+  },
+  {
+    "value": "Punjabi Bagh West",
+    "synonyms": [
+      "Punjabi Bagh West"
+    ]
+  },
+  {
+    "value": "Qutab Minar",
+    "synonyms": [
+      "Qutab Minar"
+    ]
+  },
+  {
+    "value": "R.K.Puram",
+    "synonyms": [
+      "R.K.Puram",
+      "RK Puram"
+    ]
+  },
+  {
+    "value": "Raj Bagh",
+    "synonyms": [
+      "Raj Bagh",
+      "Rajbagh"
+    ]
+  },
+  {
+    "value": "Raja Nahar Singh",
+    "synonyms": [
+      "Ballabhgarh",
+      "Nahar Singh",
+      "Raja Nahar Singh"
+    ]
+  },
+  {
+    "value": "Rajdhani Park",
+    "synonyms": [
+      "Rajdhani Park"
+    ]
+  },
+  {
+    "value": "Rajendra Place",
+    "synonyms": [
+      "Rajendra Place"
+    ]
+  },
+  {
+    "value": "Rajiv Chowk",
+    "synonyms": [
+      "C.P.",
+      "CP",
+      "Connaught Place",
+      "Rajiv Chowk"
+    ]
+  },
+  {
+    "value": "Rajouri Garden",
+    "synonyms": [
+      "Rajouri Garden"
+    ]
+  },
+  {
+    "value": "Ramakrishna Ashram Marg",
+    "synonyms": [
+      "Ashram Marg",
+      "Ramakrishna Ashram Marg",
+      "Ramakrishna Marg"
+    ]
+  },
+  {
+    "value": "Ramesh Nagar",
+    "synonyms": [
+      "Ramesh Nagar"
+    ]
+  },
+  {
+    "value": "Rithala",
+    "synonyms": [
+      "Rithala"
+    ]
+  },
+  {
+    "value": "Rohini East",
+    "synonyms": [
+      "Rohini East"
+    ]
+  },
+  {
+    "value": "Rohini Sector 18",
+    "synonyms": [
+      "Rohini Sector 18",
+      "Rohini Sector 19"
+    ]
+  },
+  {
+    "value": "Rohini West",
+    "synonyms": [
+      "Rohini West"
+    ]
+  },
+  {
+    "value": "Sadar Bazaar Cantonment",
+    "synonyms": [
+      "Sadar Bazaar Cantonment",
+      "Sadar Bazaar Cantt",
+      "Sadar Bazar",
+      "Sadar Bazar Cantonment",
+      "Sadar Bazar Cantt",
+      "sadar Bazaar"
+    ]
+  },
+  {
+    "value": "Saket",
+    "synonyms": [
+      "Saket"
+    ]
+  },
+  {
+    "value": "Samaypur Badli",
+    "synonyms": [
+      "Badli",
+      "Samaypur",
+      "Samaypur Badli"
+    ]
+  },
+  {
+    "value": "Sant Surdas",
+    "synonyms": [
+      "Good Year",
+      "NCB Colony",
+      "Sant Surdas",
+      "Sihi",
+      "Surdas"
+    ]
+  },
+  {
+    "value": "Sarai",
+    "synonyms": [
+      "Sarai"
+    ]
+  },
+  {
+    "value": "Sarita Vihar",
+    "synonyms": [
+      "Sarita Vihar"
+    ]
+  },
+  {
+    "value": "Sarojini Nagar",
+    "synonyms": [
+      "Sarojini",
+      "Sarojini Nagar"
+    ]
+  },
+  {
+    "value": "Satguru Ramsingh Marg",
+    "synonyms": [
+      "Ram Singh Marg",
+      "Ramsingh Marg",
+      "Satguru Ramsingh Marg"
+    ]
+  },
+  {
+    "value": "Sector 28",
+    "synonyms": [
+      "Sector 28"
+    ]
+  },
+  {
+    "value": "Seelampur",
+    "synonyms": [
+      "Seelampur"
+    ]
+  },
+  {
+    "value": "Shadipur",
+    "synonyms": [
+      "Shadipur"
+    ]
+  },
+  {
+    "value": "Shahdara",
+    "synonyms": [
+      "Shahdara"
+    ]
+  },
+  {
+    "value": "Shaheed Nagar",
+    "synonyms": [
+      "Shaheed Nagar"
+    ]
+  },
+  {
+    "value": "Shaheed Sthal",
+    "synonyms": [
+      "Shaheed Sthal"
+    ]
+  },
+  {
+    "value": "Shakurpur",
+    "synonyms": [
+      "Shakurpur"
+    ]
+  },
+  {
+    "value": "Shalimar Bagh",
+    "synonyms": [
+      "Shalimar Bagh"
+    ]
+  },
+  {
+    "value": "Shankar Vihar",
+    "synonyms": [
+      "Shankar Vihar"
+    ]
+  },
+  {
+    "value": "Shastri Nagar",
+    "synonyms": [
+      "Shastri Nagar"
+    ]
+  },
+  {
+    "value": "Shastri Park",
+    "synonyms": [
+      "Shastri Park"
+    ]
+  },
+  {
+    "value": "Shiv Vihar",
+    "synonyms": [
+      "Shiv Vihar"
+    ]
+  },
+  {
+    "value": "Shivaji Park",
+    "synonyms": [
+      "Shivaji Park"
+    ]
+  },
+  {
+    "value": "Shivaji Stadium",
+    "synonyms": [
+      "Shivaji Stadium"
+    ]
+  },
+  {
+    "value": "Shyam Park",
+    "synonyms": [
+      "Shyam Park"
+    ]
+  },
+  {
+    "value": "Sikandarpur",
+    "synonyms": [
+      "Sikandarpur"
+    ]
+  },
+  {
+    "value": "Sir Vishweshwaraiah Moti Bagh",
+    "synonyms": [
+      "Moti Bagh",
+      "Sir Vishweshwaraiah Moti Bagh"
+    ]
+  },
+  {
+    "value": "South Extension",
+    "synonyms": [
+      "South Extension"
+    ]
+  },
+  {
+    "value": "Subhash Nagar",
+    "synonyms": [
+      "Subhash Nagar"
+    ]
+  },
+  {
+    "value": "Sukhdev Vihar",
+    "synonyms": [
+      "Sukhdev Vihar"
+    ]
+  },
+  {
+    "value": "Sultanpur",
+    "synonyms": [
+      "Sultanpur"
+    ]
+  },
+  {
+    "value": "Tagore Garden",
+    "synonyms": [
+      "Tagore Garden"
+    ]
+  },
+  {
+    "value": "Terminal 1-IGI Airport",
+    "synonyms": [
+      "IGI Airport T1",
+      "IGI Airport Terminal 1",
+      "Indira Gandhi International Airport T1",
+      "Indira Gandhi International Airport Terminal 1",
+      "Terminal 1",
+      "Terminal 1 IGI Airport",
+      "Terminal 1-IGI Airport"
+    ]
+  },
+  {
+    "value": "Tikri Border",
+    "synonyms": [
+      "Tikri Border"
+    ]
+  },
+  {
+    "value": "Tikri Kalan",
+    "synonyms": [
+      "Tikri Kalan"
+    ]
+  },
+  {
+    "value": "Tilak Nagar",
+    "synonyms": [
+      "Tilak Nagar"
+    ]
+  },
+  {
+    "value": "Tis Hazari",
+    "synonyms": [
+      "Tis Hazari"
+    ]
+  },
+  {
+    "value": "Trilokpuri Sanjay Lake",
+    "synonyms": [
+      "Sanjay Lake",
+      "Trilokpuri",
+      "Trilokpuri Sanjay Lake"
+    ]
+  },
+  {
+    "value": "Tughlakabad Station",
+    "synonyms": [
+      "Tughlakabad",
+      "Tughlakabad Station"
+    ]
+  },
+  {
+    "value": "Udyog Bhawan",
+    "synonyms": [
+      "Udyog Bhawan"
+    ]
+  },
+  {
+    "value": "Udyog Nagar",
+    "synonyms": [
+      "Udyog Nagar"
+    ]
+  },
+  {
+    "value": "Uttam Nagar East",
+    "synonyms": [
+      "Uttam Nagar East"
+    ]
+  },
+  {
+    "value": "Uttam Nagar West",
+    "synonyms": [
+      "Uttam Nagar West"
+    ]
+  },
+  {
+    "value": "Vaishali",
+    "synonyms": [
+      "Vaishali"
+    ]
+  },
+  {
+    "value": "Vasant Vihar",
+    "synonyms": [
+      "Vasant Vihar"
+    ]
+  },
+  {
+    "value": "Vidhan Sabha",
+    "synonyms": [
+      "Vidhan Sabha"
+    ]
+  },
+  {
+    "value": "Vinobapuri",
+    "synonyms": [
+      "Vinobapuri"
+    ]
+  },
+  {
+    "value": "Vishwa Vidyalaya",
+    "synonyms": [
+      "North Campus",
+      "Vishwa Vidyalaya",
+      "Vishwavidyalaya"
+    ]
+  },
+  {
+    "value": "Welcome",
+    "synonyms": [
+      "Welcome"
+    ]
+  },
+  {
+    "value": "Yamuna Bank",
+    "synonyms": [
+      "Yamuna Bank"
+    ]
+  }
+]
