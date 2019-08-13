@@ -5,6 +5,23 @@
 Agent.zip -> Contains dialogflow modules - intents, entities, etc.</br>
 index.js -> Webook fulfillment for intents defined in Agent.zip</br>
 
+## Current Features
+</br>
+->Returns shortest path between 2 interchange stations</br>
+->Returns time taken for the path</br>
+->Takes into account a penalty for interchanges</br>
+->Same Destination and Source handler</br>
+->Random Metro Etiquette displayer</br>
+
+## Features To Be Added
+</br>
+->Return train-towards station (last station of line for the metro to take)</br>
+->Return fare</br>
+->Add intent to view metro map</br>
+->Add option to take nearest metro station (through GPS) as source</br>
+->Add intent to take both destination and source parameters in a single call</br>
+->Add option to choose from 2 paths if one has lesser interchanges, and the other has a shorter overall travel time if the difference between the 2 is ~10 minutes.
+
 ## Working
 
 Step 1: User invokes application in Google Assistant</br>
@@ -22,19 +39,12 @@ Step 12: Add speech output along with the card</br>
 Step 13: Choose from a random set of given Metro Etiquettes and output it in a Basic Response</br>
 Step 14: EXIT
 
-## Current Features
-</br>
-->Returns shortest path between 2 interchange stations</br>
-->Returns time taken for the path</br>
-->Takes into account a penalty for interchanges</br>
-->Same Destination and Source handler</br>
-->Random Metro Etiquette displayer</br>
 
-## Features To Be Added
+## Usage/Testing
+
+Say 'Talk to Delhi Metro' on Google Assistant enabled devices such as Android Phones, Smart TVs, Google Home, Google Home Mini, Assistant enabled headphones, Android smartwatches, etc. to invoke the action.</br>
+Just saying Delhi Metro on Google Assistant will give you a search result about Delhi Metro, with a suggestion box saying 'Try Delhi Metro', which upon pressing invokes this action.</br>
 </br>
-->Return train-towards station (last station of line for the metro to take)</br>
-->Return fare</br>
-->Add intent to view metro map</br>
-->Add option to take nearest metro station (through GPS) as source</br>
-->Add intent to take both destination and source parameters in a single call</br>
-->Add option to choose from 2 paths if one has lesser interchanges, and the other has a shorter overall travel time if the difference between the 2 is ~10 minutes.
+
+### Assistant App Store Page
+https://assistant.google.com/services/r/uid/000000475aca689d?hl=en-US
