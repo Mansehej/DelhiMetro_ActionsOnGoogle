@@ -71,24 +71,38 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return samein[pick];
     }
 
+    function branchRemover(line) {
+        if(line == 'bluebranch')
+            return 'blue'
+        else if(line == 'greenbranch')
+            return 'green'
+        else if(line == 'pinkbranch')
+            return 'pink'
+        else    
+            return line;
+    }
+
     function outputHandler(res) {
-        if (res.line1[0] == '1.2km Skywalk')
+        var line2;
+        var line1 = branchRemover(res.line1[0]);
+        if (line1 == '1.2km Skywalk')
             speak = 'Walk 1.2km on the Skywalk at ' + from + ' to ';
         else
-            speak = 'Take the ' + res.line1[0] + ' line at ' + from + ' to ';
-        pretty = '**' + from + '** ⟹ _'+ firstUC(res.line1[0]) + '_ ';
+            speak = 'Take the ' + line1 + ' line at ' + from + ' to ';
+        pretty = '**' + from + '** ⟹ _'+ firstUC(line1) + '_ ';
         for (var i = 0; i < res.interchange.length; i++) {
+            var line2=branchRemover(res.line2[i])
             //lineEnds = 0 Handler AND interchange is last station of line Handler
             if(res.lineEnds[i]==0) //|| res.lineEnds[i] == interchange[i])
                 pretty = pretty + ' ⟹ ' + ' __'+res.interchange[i]+ '__  \n';
             else
                 pretty = pretty + ' ⟹ ' + ' __'+res.interchange[i] + '__  \n(Towards ' + res.lineEnds[i] + ')  \n  \n';
-            pretty = pretty + '__'+res.interchange[i] + '__ ⟹ _' + firstUC(res.line2[i]) + '_ ';
-            if (res.line2[i] == '1.2km Skywalk') 
+            pretty = pretty + '__'+res.interchange[i] + '__ ⟹ _' + firstUC(line2) + '_ ';
+            if (res.line2 == '1.2km Skywalk') 
                 speak = speak + res.interchange[i] + '. Then, walk 1.2 kilometers on the skywalk and go to ';
             else
-                speak = speak + res.interchange[i] + '. Then, change to the ' + res.line2[i] + ' line and go to ';
-            console.log(res.interchange[i] + res.line2[i]);
+                speak = speak + res.interchange[i] + '. Then, change to the ' + line2 + ' line and go to ';
+            console.log(res.interchange[i] + line2);
         }
         speak = speak + to;
         speak = speak + '\n  \n  \n. , Estimated Travel time is :';
