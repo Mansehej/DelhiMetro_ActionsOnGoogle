@@ -10,14 +10,15 @@ const request = require('request');
 process.env.DEBUG = 'dialogflow:debug';
 
 var from;
-var to;
-var pretty;
-var speak;
-var pretty;
+    var to;
+    var pretty;
+    var speak;
 
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
     const agent = new WebhookClient({ request, response });
+    
+    
 
     function getDest(agent) {
         to = agent.parameters.destination;
@@ -72,13 +73,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     }
 
     function branchRemover(line) {
-        if(line == 'bluebranch')
+        if (line == 'bluebranch')
             return 'blue'
-        else if(line == 'greenbranch')
+        else if (line == 'greenbranch')
             return 'green'
-        else if(line == 'pinkbranch')
+        else if (line == 'pinkbranch')
             return 'pink'
-        else    
+        else
             return line;
     }
 
@@ -87,39 +88,42 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         var line1 = branchRemover(res.line1[0]);
         if (line1 == '1.2km Skywalk')
             speak = 'Walk 1.2km on the Skywalk at ' + from + ' to ';
+        else if (line1 == '300m Walkway/Free e-Rickshaw')
+            speak = 'Walk 300m on the walkway, or take a free e-Rickshaw at ' + from + ' to ';
         else
             speak = 'Take the ' + line1 + ' line at ' + from + ' to ';
-        pretty = '**' + from + '** ⟹ _'+ firstUC(line1) + '_ ';
+        pretty = '**' + from + '** ⟹ _' + firstUC(line1) + '_ ';
         for (var i = 0; i < res.interchange.length; i++) {
-            var line2=branchRemover(res.line2[i])
-            //lineEnds = 0 Handler AND interchange is last station of line Handler
-            if(res.lineEnds[i]==0) //|| res.lineEnds[i] == interchange[i])
-                pretty = pretty + ' ⟹ ' + ' __'+res.interchange[i]+ '__  \n';
+            var line2 = branchRemover(res.line2[i])
+            //lineEnds = 0 Handler 
+            if (res.lineEnds[i] == 0)
+                pretty = pretty + ' ⟹ ' + ' __' + res.interchange[i] + '__  \n  \n';
             else
-                pretty = pretty + ' ⟹ ' + ' __'+res.interchange[i] + '__  \n(Towards ' + res.lineEnds[i] + ')  \n  \n';
-            pretty = pretty + '__'+res.interchange[i] + '__ ⟹ _' + firstUC(line2) + '_ ';
-            if (res.line2 == '1.2km Skywalk') 
+                pretty = pretty + ' ⟹ ' + ' __' + res.interchange[i] + '__  \n(Towards ' + res.lineEnds[i] + ')  \n  \n';
+            pretty = pretty + '__' + res.interchange[i] + '__ ⟹ _' + firstUC(line2) + '_ ';
+            if (line2 == '1.2km Skywalk')
                 speak = speak + res.interchange[i] + '. Then, walk 1.2 kilometers on the skywalk and go to ';
+            else if (line2 == '300m Walkway/Free e-Rickshaw')
+                speak = speak + res.interchange[i] + 'Then, walk 300m on the walkway, or take a free e-Rickshaw and go to';
             else
                 speak = speak + res.interchange[i] + '. Then, change to the ' + line2 + ' line and go to ';
             console.log(res.interchange[i] + line2);
         }
         speak = speak + to;
         speak = speak + '\n  \n  \n. , Estimated Travel time is :';
-        if(res.lineEnds[res.lineEnds.length-1]==0)// || res.lineEnds[res.lineEnds.length-1] == to)
+        if (res.lineEnds[res.lineEnds.length - 1] == 0)
             pretty = pretty + ' ⟹ **' + to + '**';
         else
-            pretty = pretty + ' ⟹ **' + to + '**' + '  \n(Towards ' + res.lineEnds[res.lineEnds.length-1] + ')';
+            pretty = pretty + ' ⟹ **' + to + '**' + '  \n(Towards ' + res.lineEnds[res.lineEnds.length - 1] + ')';
         pretty = pretty + '  \n  \n  \n**Travel Time:** ';
         var time = Math.round(res.time);
         appendHours(time);
         console.log(pretty);
     }
 
-    function firstUC(string) 
-{
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+    function firstUC(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 
     function metroManners() {
         var possibleResponse = [
