@@ -9,23 +9,21 @@ const request = require('request');
 
 process.env.DEBUG = 'dialogflow:debug';
 
-
-
+var from;
+    var to;
+    var pretty;
+    var speak;
 
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
-
-    
-
     const agent = new WebhookClient({ request, response });
     
-    var from;
-    var to;
-    var pretty;
-    var speak
+    
 
     function getDest(agent) {
-        console.log('to: ' + agent.parameters.destination);
+        to = agent.parameters.destination;
+        console.log(agent.parameters.destination.value);
+        console.log('to: ' + to);
         agent.add('Okay, Where are you leaving from?');
 
     }
@@ -146,12 +144,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function getSource(agent) {
         let conv = agent.conv();
         console.log("Inside Source");
-        console.log('destinationist: ' + agent.parameters.destinationist);
-       // var op=agent.queryResult.outputContexts;
-        //console.log('OP' + op);
-        //console.log(op[op.length-1].parameters.destination)
+        var info;
         from = agent.parameters.source;
-        to = agent.parameters.destinationist;
         if (from == to) {
             conv.close(sameToFrom());
             agent.add(conv);
