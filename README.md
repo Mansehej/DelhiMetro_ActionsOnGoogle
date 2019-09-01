@@ -44,6 +44,7 @@ Step 14: EXIT
 
 Say 'Talk to Delhi Metro' on Google Assistant enabled devices such as Android Phones, Smart TVs, Google Home, Google Home Mini, Assistant enabled headphones, Android smartwatches, etc. to invoke the action.</br>
 Just saying Delhi Metro on Google Assistant will give you a search result about Delhi Metro, with a suggestion box saying 'Try Delhi Metro', which upon pressing invokes this action.</br>
+One can also directly get the route by saying something on the lines of: "Ask Delhi Metro the route from Palam to Vaishali" directly in Google Assistant instead of the whole "Talk to Delhi Metro" process.
 </br>
 
 ### Assistant App Store Page
