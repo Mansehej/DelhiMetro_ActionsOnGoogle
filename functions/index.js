@@ -24,12 +24,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     var pretty;
     var speak
 
-    function getDest(agent) {
-        console.log('to: ' + agent.parameters.destination);
-        agent.add('Okay, Where are you leaving from?');
-
-    }
-
     function appendHours(time) {
         var hours;
         var minutes;
@@ -64,11 +58,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     }
 
-    function sameToFrom() {
+    function sameToFrom(from) {
         var samein = [
-            'Enter ' + from + ' station, leave ' + to + ' station. Congrats, you just wasted 10 Rupees!',
-            'Enter the station at ' + from + ', do a 180, leave the station. Welcome back to ' + to + '!',
-            'You want to go from ' + from + ' to ' + to + '? Weird flex but ok..'
+            'Enter ' + from + ' station, leave ' + from + ' station. Congrats, you just wasted 10 Rupees!',
+            'Enter the station at ' + from + ', do a 180, leave the station. Welcome back to ' + from + '!',
+            'You want to go from ' + from + ' to ' + from + '? Weird flex but ok..'
         ];
         var pick = Math.round(Math.random() * samein.length);
         return samein[pick];
@@ -130,30 +124,33 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function metroManners() {
         var possibleResponse = [
             'Kindly let people exit the train before entering it.',
+            'Kindly let people deboard the train before boarding it.',
             'Do not enter the coach reserved for ladies if you are male.',
             'Do not sit on seats reserved for ladies, the elderly, or the disabled.',
             'Use headphones if listening to music on the Delhi Metro.',
             'Eating and drinking are not allowed inside the metro train.',
             'Please keep towards the center of the doors while deboarding the train.',
             'Please stand towards the sides of the doors while waiting for passengers to deboard.',
-            'Please do not hang bags on your back inside Metro Trains.',
-            'Kindly stand behind the yellow line while waiting for a train on the platform.'
+            'Please do not hang bags on your back inside metro trains.',
+            'Kindly stand behind the yellow line while waiting for a train on the platform.',
+            'Stand on the left while on escalators and moving walkways.',
+            'Keep your smart cards or tokens ready before approaching the AFC gates.',
+            'Sitting on the floor of metro trains is a punishable offense.',
+            'Kindly cooperate and be kind to your fellow passengers.'
         ];
         var pick = Math.round(Math.random() * possibleResponse.length);
         return possibleResponse[pick];
     }
 
-    function getSource(agent) {
+    function getRoute(agent) {
+        console.log("Inside Router");
         let conv = agent.conv();
-        console.log("Inside Source");
-        console.log('destinationist: ' + agent.parameters.destinationist);
-       // var op=agent.queryResult.outputContexts;
-        //console.log('OP' + op);
-        //console.log(op[op.length-1].parameters.destination)
+        console.log('destinationist: ' + agent.parameters.destination);
+        console.log('sourcist: ' + agent.parameters.source)
         from = agent.parameters.source;
-        to = agent.parameters.destinationist;
+        to = agent.parameters.destination;
         if (from == to) {
-            conv.close(sameToFrom());
+            conv.close(sameToFrom(from));
             agent.add(conv);
         }
         else {
@@ -198,7 +195,6 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return axios.get(url);
     }
     let intentMap = new Map();
-    intentMap.set('Destination', getDest);
-    intentMap.set('Source', getSource);
+    intentMap.set('Router', getRoute);
     agent.handleRequest(intentMap);
 });
