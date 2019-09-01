@@ -48,4 +48,4 @@ One can also directly get the route by saying something on the lines of: "Ask De
 </br>
 
 ### Assistant App Store Page
-https://assistant.google.com/services/r/uid/000000475aca689d?hl=en-US
+https://assistant.google.com/services/r/uid/000000475aca689d
