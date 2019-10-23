@@ -1,31 +1,48 @@
 'use strict';
 
-const { SimpleResponse, BasicCard } = require('actions-on-google');
+const {
+    SimpleResponse, 
+    BasicCard, 
+    Button, 
+    Image,
+    Suggestions} = require('actions-on-google');
 const functions = require('firebase-functions');
 const { WebhookClient } = require('dialogflow-fulfillment');
-const { Card, Suggestion } = require('dialogflow-fulfillment');
 const axios = require('axios');
-const request = require('request');
 
 process.env.DEBUG = 'dialogflow:debug';
 
-var from;
-    var to;
-    var pretty;
-    var speak;
-
-
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
+
     const agent = new WebhookClient({ request, response });
     
-    
+    var from;
+    var to;
+    var pretty;
+    var speak
 
-    function getDest(agent) {
-        to = agent.parameters.destination;
-        console.log(agent.parameters.destination.value);
-        console.log('to: ' + to);
-        agent.add('Okay, Where are you leaving from?');
+    function welcomeResponses() {
+        var possibleResponse = [
+            'Welcome to Delhi Metro. How can I help you?',
+            'Welcome to Delhi Metro. How can I help you today?',
+            'Welcome to Delhi Metro. How may I assist you?',
+            'Welcome to Delhi Metro. How may I assist you today?',
+            'Welcome to Delhi Metro. How can I be of service?'
+        ];
+        var pick = Math.round(Math.random() * possibleResponse.length);
+        return possibleResponse[pick];
+    }
 
+    function welcome(agent) {
+        let conv = agent.conv();
+        var welcomeText = welcomeResponses()
+        conv.ask(new SimpleResponse({
+            speech: 'Welcome to Delhi Metro. How can I help you today?',
+            text: 'Welcome to Delhi Metro. How can I help you today?'
+        }));
+        conv.ask(new Suggestions("Route Planner"))
+        conv.ask(new Suggestions("Metro Map"))
+        agent.add(conv);
     }
 
     function appendHours(time) {
@@ -62,11 +79,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     }
 
-    function sameToFrom() {
+    function sameToFrom(from) {
         var samein = [
-            'Enter ' + from + ' station, leave ' + to + ' station. Congrats, you just wasted 10 Rupees!',
-            'Enter the station at ' + from + ', do a 180, leave the station. Welcome back to ' + to + '!',
-            'You want to go from ' + from + ' to ' + to + '? Weird flex but ok..'
+            'Enter ' + from + ' station, leave ' + from + ' station. Congrats, you just wasted 10 Rupees!',
+            'Enter the station at ' + from + ', do a 180, leave the station. Welcome back to ' + from + '!',
+            'You want to go from ' + from + ' to ' + from + '? Weird flex but ok..'
         ];
         var pick = Math.round(Math.random() * samein.length);
         return samein[pick];
@@ -141,18 +158,22 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         return possibleResponse[pick];
     }
 
-    function getSource(agent) {
+   
+
+    function getRoute(agent) {
+        console.log("Inside Router");
         let conv = agent.conv();
-        console.log("Inside Source");
-        var info;
         from = agent.parameters.source;
+        to = agent.parameters.destination;
+        console.log('destinationist: ' + to);
+        console.log('sourcist: ' + from)
         if (from == to) {
-            conv.close(sameToFrom());
+            conv.close(sameToFrom(from));
             agent.add(conv);
         }
         else {
             console.log('from: ' + from);
-            var url = "https://us-central1-delhimetroapi.cloudfunctions.net/route/?to=" + to + "&from=" + from;
+            var url = "https://us-central1-delhimetroapi.cloudfunctions.net/route-get?to=" + to + "&from=" + from;
             return callApi(url).then(response => {
                 console.log('Inside Response');
                 let res = response.data;
@@ -186,13 +207,38 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         }
     }
 
+    function getMap(agent) {
+        let conv = agent.conv();
+        conv.ask(new SimpleResponse({
+            speech: "Here you go",
+            text: "Here you go"
+        }));
+        conv.close(new BasicCard({
+            title: 'Delhi Metro Map',
+            buttons: new Button({
+              title: 'View Full Size',
+              url: 'https://firebasestorage.googleapis.com/v0/b/trymetro-37b25.appspot.com/o/bilingual-21062019.jpg?alt=media&token=eb92a30d-d5ac-467b-853a-c3435842ae86',
+            }),
+            image: new Image({
+              url: 'https://firebasestorage.googleapis.com/v0/b/trymetro-37b25.appspot.com/o/bilingual-21062019.jpg?alt=media&token=eb92a30d-d5ac-467b-853a-c3435842ae86',
+              alt: 'Delhi Metro Network Map',
+            }),
+            display: 'CROPPED',
+          }));
+         // conv.add('Tschuss');
+          agent.add(conv);
+    }
+    
     function callApi(url) {
         console.log(url);
         console.log(axios.get(url));
         return axios.get(url);
     }
+
+
     let intentMap = new Map();
-    intentMap.set('Destination', getDest);
-    intentMap.set('Source', getSource);
+    intentMap.set('Router', getRoute);
+    intentMap.set('Map', getMap);
+    intentMap.set('Default Welcome Intent', welcome);
     agent.handleRequest(intentMap);
 });
