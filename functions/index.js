@@ -1,21 +1,66 @@
-'use strict';
+﻿'use strict';
 
-const { SimpleResponse, BasicCard } = require('actions-on-google');
+const {
+    SimpleResponse, 
+    BasicCard, 
+    Button, 
+    Image,
+    Suggestions} = require('actions-on-google');
 const functions = require('firebase-functions');
 const { WebhookClient } = require('dialogflow-fulfillment');
-const { Card, Suggestion } = require('dialogflow-fulfillment');
 const axios = require('axios');
-const request = require('request');
 
 process.env.DEBUG = 'dialogflow:debug';
 
+function exitResponses() {
+    var possibleResponse = [
+        'Alright, have a nice day!',
+        'Okay, Goodbye!',
+        'Okay then, hope to see you again!',
+        'It was a pleasure helping you. Goodbye!',
+        'Alrightey, Good day!',
+        'Cool. Bye bye!',
+        'Alright! Hope to see you soon!'
+    ];
+    var pick = Math.round(Math.random() * possibleResponse.length);
+    return possibleResponse[pick];
+}
 
 
+function firstUC(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function metroManners() {
+    var possibleResponse = [
+        'Kindly let people exit the train before entering it.',
+        'Do not enter the coach reserved for ladies if you are male.',
+        'Do not sit on seats reserved for ladies, the elderly, or the disabled.',
+        'Use headphones if listening to music on the Delhi Metro.',
+        'Eating and drinking are not allowed inside the metro train.',
+        'Please keep towards the center of the doors while deboarding the train.',
+        'Please stand towards the sides of the doors while waiting for passengers to deboard.',
+        'Please do not hang bags on your back inside Metro Trains.',
+        'Kindly stand behind the yellow line while waiting for a train on the platform.'
+    ];
+    var pick = Math.round(Math.random() * possibleResponse.length);
+    return possibleResponse[pick];
+}
+
+function welcomeResponses() {
+    var possibleResponse = [
+        'Welcome to Delhi Metro. How can I help you?',
+        'Welcome to Delhi Metro. How can I help you today?',
+        'Welcome to Delhi Metro. How may I assist you?',
+        'Welcome to Delhi Metro. How may I assist you today?',
+        'Welcome to Delhi Metro. How can I be of service?'
+    ];
+    var pick = Math.round(Math.random() * possibleResponse.length);
+    return possibleResponse[pick];
+}
 
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
-
-    
 
     const agent = new WebhookClient({ request, response });
     
@@ -23,6 +68,21 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     var to;
     var pretty;
     var speak
+
+
+
+    function welcome(agent) {
+        let conv = agent.conv();
+        var welcomeText = welcomeResponses()
+        conv.ask(new SimpleResponse({
+            speech: 'Welcome to Delhi Metro. How can I help you today?',
+            text: 'Welcome to Delhi Metro. How can I help you today?'
+        }));
+        conv.ask(new Suggestions("Route Planner"))
+        conv.ask(new Suggestions("Metro Map"))
+        conv.ask(new Suggestions("Random Etiquette"))
+        agent.add(conv);
+    }
 
     function appendHours(time) {
         var hours;
@@ -117,45 +177,45 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         console.log(pretty);
     }
 
-    function firstUC(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
 
-    function metroManners() {
-        var possibleResponse = [
-            'Kindly let people exit the train before entering it.',
-            'Kindly let people deboard the train before boarding it.',
-            'Do not enter the coach reserved for ladies if you are male.',
-            'Do not sit on seats reserved for ladies, the elderly, or the disabled.',
-            'Use headphones if listening to music on the Delhi Metro.',
-            'Eating and drinking are not allowed inside the metro train.',
-            'Please keep towards the center of the doors while deboarding the train.',
-            'Please stand towards the sides of the doors while waiting for passengers to deboard.',
-            'Please do not hang bags on your back inside metro trains.',
-            'Kindly stand behind the yellow line while waiting for a train on the platform.',
-            'Stand on the left while on escalators and moving walkways.',
-            'Keep your smart cards or tokens ready before approaching the AFC gates.',
-            'Sitting on the floor of metro trains is a punishable offense.',
-            'Kindly cooperate and be kind to your fellow passengers.'
-        ];
-        var pick = Math.round(Math.random() * possibleResponse.length);
-        return possibleResponse[pick];
-    }
+   function getManner(agent) {
+       console.log("Inside Manners giver")
+       let conv = agent.conv()
+       var out = metroManners();
+    //    conv.ask(new SimpleResponse({
+    //            text: "Release date: 12th October. You can try getting a route between stations, or asking for the metro map.",
+    //            speech: "This functionality shall be released by the 12th of October. Till then, you can try getting a route between stations, or asking for the metro map."
+    //        }))
+       conv.ask(new SimpleResponse({
+           text: out,
+           speech: out
+       }))
+       console.log("Manner:" + out)
+       conv.ask(new SimpleResponse({
+        speech: '<speak><break time="800ms"/>Is there anything else I can help you with?</speak>',
+        text: 'Anything else I can help you with?'
+    }));
+       conv.ask(new Suggestions("Another Etiquette"))
+       conv.ask(new Suggestions("Route Planner"))
+       conv.ask(new Suggestions("Metro Map"))
+       conv.ask(new Suggestions("Exit"))
+       agent.add(conv)
+   }
 
     function getRoute(agent) {
         console.log("Inside Router");
         let conv = agent.conv();
-        console.log('destinationist: ' + agent.parameters.destination);
-        console.log('sourcist: ' + agent.parameters.source)
         from = agent.parameters.source;
         to = agent.parameters.destination;
+        console.log('destinationist: ' + to);
+        console.log('sourcist: ' + from)
         if (from == to) {
             conv.close(sameToFrom(from));
             agent.add(conv);
         }
         else {
             console.log('from: ' + from);
-            var url = "https://us-central1-delhimetroapi.cloudfunctions.net/route/?to=" + to + "&from=" + from;
+            var url = "https://us-central1-delhimetroapi.cloudfunctions.net/route-get?to=" + to + "&from=" + from;
             return callApi(url).then(response => {
                 console.log('Inside Response');
                 let res = response.data;
@@ -165,12 +225,20 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
                     speech: speak,
                     text: stext
                 }));
-                conv.close(new BasicCard({
+                conv.ask(new BasicCard({
                     text: pretty,
                     subtitle: 'Enjoy your journey!',
                     title: 'Route from ' + from + ' to ' + to,
                     display: 'CROPPED'
                 }));
+                conv.ask(new SimpleResponse({
+                    speech: '<speak><break time="300ms"/>Is there anything else I can help you with?</speak>',
+                    text: 'Anything else I can help you with?'
+                }));
+                conv.ask(new Suggestions("Another Route"))
+                conv.ask(new Suggestions("Metro Map"))
+                conv.ask(new Suggestions("Random Etiquette"))
+                conv.ask(new Suggestions("Exit"))
                 agent.add(conv);
                 console.log('Done');
             }).catch(error => {
@@ -189,12 +257,61 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         }
     }
 
+    function getMap(agent) {
+        let conv = agent.conv();
+        conv.ask(new SimpleResponse({
+            speech: 'Here you go',
+            text: "Here's the metro map"
+        }));
+        conv.ask(new BasicCard({
+            title: 'Delhi Metro Map',
+            buttons: new Button({
+              title: 'View Full Size',
+              url: 'https://firebasestorage.googleapis.com/v0/b/trymetro-37b25.appspot.com/o/bilingual-21062019.jpg?alt=media&token=eb92a30d-d5ac-467b-853a-c3435842ae86',
+            }),
+            image: new Image({
+              url: 'https://firebasestorage.googleapis.com/v0/b/trymetro-37b25.appspot.com/o/bilingual-21062019.jpg?alt=media&token=eb92a30d-d5ac-467b-853a-c3435842ae86',
+              alt: 'Delhi Metro Network Map',
+            }),
+            display: 'CROPPED',
+          }));
+          conv.ask(new SimpleResponse({
+            speech: '<speak><break time="800ms"/>Is there anything else I can help you with?</speak>',
+            text: 'Anything else I can help you with?'
+        }));
+        conv.ask(new Suggestions("Random Etiquette"))
+        conv.ask(new Suggestions("Route Planner"))
+        conv.ask(new Suggestions("Exit"))
+          agent.add(conv);
+    }
+    
     function callApi(url) {
         console.log(url);
         console.log(axios.get(url));
         return axios.get(url);
     }
+
+    function exiter(agent) {
+        let conv = agent.conv();
+        var out = exitResponses();
+        conv.close(new SimpleResponse({
+            speech: out,
+            text: out
+        }));
+        agent.add(conv)
+    }
+
+    //berkley max plank rutherford
+
+
     let intentMap = new Map();
     intentMap.set('Router', getRoute);
+    intentMap.set('Map', getMap);
+    intentMap.set('Manners', getManner);
+    intentMap.set('Default Welcome Intent', welcome);
+    intentMap.set('Router - no', exiter)
+    intentMap.set('Ender', exiter)
+    intentMap.set('Manners - no', exiter)
+    intentMap.set('Map - no', exiter);
     agent.handleRequest(intentMap);
 });
