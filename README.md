@@ -12,6 +12,9 @@ index.js -> Webook fulfillment for intents defined in Agent.zip</br>
 ->Takes into account a penalty for interchanges</br>
 ->Same Destination and Source handler</br>
 ->Random Metro Etiquette displayer</br>
+->Return train-towards station (last station of line for the metro to take)</br>
+->Add intent to view metro map</br>
+->Add intent to take both destination and source parameters in a single call</br>
 
 ## Features To Be Added
 </br>
