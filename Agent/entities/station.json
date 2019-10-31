@@ -1,0 +1,9 @@
+{
+  "id": "d09add20-d165-4b64-86df-c31e9d32c6fd",
+  "name": "station",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

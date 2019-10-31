@@ -1,0 +1,78 @@
+[
+  {
+    "value": "aqua",
+    "synonyms": [
+      "aqua"
+    ]
+  },
+  {
+    "value": "blue",
+    "synonyms": [
+      "blue"
+    ]
+  },
+  {
+    "value": "bluebranch",
+    "synonyms": [
+      "Blue Brach",
+      "bluebranch"
+    ]
+  },
+  {
+    "value": "green",
+    "synonyms": [
+      "green"
+    ]
+  },
+  {
+    "value": "green branch",
+    "synonyms": [
+      "green branch"
+    ]
+  },
+  {
+    "value": "magenta",
+    "synonyms": [
+      "magenta"
+    ]
+  },
+  {
+    "value": "orange",
+    "synonyms": [
+      "Airport",
+      "Airport Express",
+      "orange"
+    ]
+  },
+  {
+    "value": "pink",
+    "synonyms": [
+      "pink"
+    ]
+  },
+  {
+    "value": "pink branch",
+    "synonyms": [
+      "Pink Branch",
+      "pink branch"
+    ]
+  },
+  {
+    "value": "red",
+    "synonyms": [
+      "red"
+    ]
+  },
+  {
+    "value": "violet",
+    "synonyms": [
+      "violet"
+    ]
+  },
+  {
+    "value": "yellow",
+    "synonyms": [
+      "yellow"
+    ]
+  }
+]

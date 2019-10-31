@@ -1,0 +1,66 @@
+{
+  "id": "5d2231f8-17cc-440e-a7dc-91299725b7af",
+  "name": "Stations",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "60e55534-3580-4b08-8271-768f6a919c52",
+          "required": true,
+          "dataType": "@lines",
+          "name": "line",
+          "value": "line",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Which metro line do you want the station list of?"
+            },
+            {
+              "lang": "en",
+              "value": "You want the station list of which metro line?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "e8dc0cb5-e10c-4074-892e-c6cc07846ac3",
+          "required": false,
+          "dataType": "@lines",
+          "name": "lines",
+          "value": "$lines",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

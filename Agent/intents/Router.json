@@ -1,0 +1,94 @@
+{
+  "id": "d930f284-8f6a-4dd7-8fbd-bb7762c49c49",
+  "name": "Router",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Router-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "23211ba4-d07b-430f-8635-67d148d7c249",
+          "required": true,
+          "dataType": "@station",
+          "name": "source",
+          "value": "$source",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Where are you leaving from?"
+            },
+            {
+              "lang": "en",
+              "value": "Which station are you leaving from?"
+            },
+            {
+              "lang": "en",
+              "value": "What is your departure station?"
+            },
+            {
+              "lang": "en",
+              "value": "Where do you plan to leave from?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "c795207b-e56c-4d09-a154-65ffc6c2563a",
+          "required": true,
+          "dataType": "@station",
+          "name": "destination",
+          "value": "$destination",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Where do you want to go?"
+            },
+            {
+              "lang": "en",
+              "value": "Which station do you want to go?"
+            },
+            {
+              "lang": "en",
+              "value": "What is your destination?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

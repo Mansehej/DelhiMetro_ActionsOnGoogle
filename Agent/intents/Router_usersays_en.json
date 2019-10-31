@@ -1,0 +1,476 @@
+[
+  {
+    "id": "0484cd6e-270e-4d8e-9485-1c6ff393d97e",
+    "data": [
+      {
+        "text": "Route",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c7583ce9-b594-4b0d-977c-9954edf03b9f",
+    "data": [
+      {
+        "text": "Directions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e80db998-f4db-4e77-a33d-f81761630d02",
+    "data": [
+      {
+        "text": "I want directions",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8bac441e-690b-4f21-81b4-7921246e1504",
+    "data": [
+      {
+        "text": "I want the route",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "31b87b46-b8cc-4ac0-9d07-babd6eca7143",
+    "data": [
+      {
+        "text": "Route planner",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e068d6bb-50bb-4883-8346-e577d4e6a03e",
+    "data": [
+      {
+        "text": "I want to go from ",
+        "userDefined": false
+      },
+      {
+        "text": "Janakpuri East",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "44fb2c48-d87b-41ef-bad9-a93ef65abb28",
+    "data": [
+      {
+        "text": "From ",
+        "userDefined": false
+      },
+      {
+        "text": "Preet Vihar",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "77dbda7c-43dd-468c-b5cb-a4aa83304f37",
+    "data": [
+      {
+        "text": "I want to go from ",
+        "userDefined": false
+      },
+      {
+        "text": "Rajiv Chowk",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ca3ac65b-5960-4bf4-a6bc-04cffa9ebb39",
+    "data": [
+      {
+        "text": "I want to leave from ",
+        "userDefined": false
+      },
+      {
+        "text": "Rajiv Chowk",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "13538181-028c-4bb0-a1e1-8b61591306ad",
+    "data": [
+      {
+        "text": "Dwarka",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " is my destination",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a484374e-9d60-4556-a6c0-07361beda2c4",
+    "data": [
+      {
+        "text": "I am going to go from ",
+        "userDefined": false
+      },
+      {
+        "text": "dwarka",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f4bac3f9-994f-4571-926e-bccccead67ea",
+    "data": [
+      {
+        "text": "I want to leave from ",
+        "userDefined": false
+      },
+      {
+        "text": "Dwarka",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "06ebf898-b85a-459e-bd24-a0f12b3e4bbf",
+    "data": [
+      {
+        "text": "I want to go to ",
+        "userDefined": false
+      },
+      {
+        "text": "Palam",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "71b261c3-8f53-4210-9fac-44f71848384e",
+    "data": [
+      {
+        "text": "Rajiv Chowk",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fd78ff10-a006-45ac-b2b2-688e230fbcf7",
+    "data": [
+      {
+        "text": "Palam",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1134c363-1701-4279-8cd2-b95eb743cb37",
+    "data": [
+      {
+        "text": "Dwarka",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c872f03f-aeba-4360-8801-9516a91181c7",
+    "data": [
+      {
+        "text": "I want to go to ",
+        "userDefined": false
+      },
+      {
+        "text": "Preet Vihar",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Palam",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "54093fe8-5b5a-4b30-8968-ef21ff3cad80",
+    "data": [
+      {
+        "text": "I want to go from ",
+        "userDefined": false
+      },
+      {
+        "text": "Botanical Garden",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "IP Extension",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8fee0041-05f0-4734-aafc-de6799bc1b73",
+    "data": [
+      {
+        "text": "Palam",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Noida",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "194fd73e-5263-4249-90c4-c090f28443e9",
+    "data": [
+      {
+        "text": "Palam",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Noida",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "19b4cbce-b1cc-4371-aad7-6debf285065d",
+    "data": [
+      {
+        "text": "Rajiv Chowk",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " from ",
+        "userDefined": false
+      },
+      {
+        "text": "Dwarka",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "462e9033-dddc-4360-8d4e-33237507e79c",
+    "data": [
+      {
+        "text": "I want to go from ",
+        "userDefined": false
+      },
+      {
+        "text": "Preet Vihar",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Dwarka Sector 11",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5174e7a7-0507-4401-aeba-e151e9c2a7da",
+    "data": [
+      {
+        "text": "Vaishali",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Rajiv Chowk",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0d8f11ba-2930-4d98-9492-8aef89875fa6",
+    "data": [
+      {
+        "text": "Janakpuri West",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Rajouri Garden",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2906564a-b584-43b4-9a52-c1ad5b3fa726",
+    "data": [
+      {
+        "text": "Dwarka",
+        "alias": "source",
+        "meta": "@station",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "Palam",
+        "alias": "destination",
+        "meta": "@station",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

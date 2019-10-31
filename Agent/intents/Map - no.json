@@ -1,0 +1,44 @@
+{
+  "id": "93d857aa-a84f-4af5-bcde-35e737e248ef",
+  "parentId": "a6b9de2b-59b4-4a6f-9204-7a061e8f1f3c",
+  "rootParentId": "a6b9de2b-59b4-4a6f-9204-7a061e8f1f3c",
+  "name": "Map - no",
+  "auto": true,
+  "contexts": [
+    "Map-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Map.Map-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Alright, have a nice day!",
+            "Okay, Goodbye!",
+            "Okay then, hope to see you again!",
+            "It was a pleasure helping you. Goodbye!",
+            "Alrightey, Good day!",
+            "Cool. Bye bye!",
+            "Alright! Hope to see you soon!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

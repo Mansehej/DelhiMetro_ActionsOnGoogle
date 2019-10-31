@@ -1,0 +1,134 @@
+[
+  {
+    "id": "a622cf76-d0ee-4979-943b-474a454e0eb7",
+    "data": [
+      {
+        "text": "Naksha Dikhao",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6a1b8602-463f-402b-ab76-9bebe5f0761f",
+    "data": [
+      {
+        "text": "Metro Naksha",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f749469b-18b1-4119-a685-5bed9f943f61",
+    "data": [
+      {
+        "text": "Naksha",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4cada763-4308-41ae-975f-4483519cce54",
+    "data": [
+      {
+        "text": "Show me the metro network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "25e45039-2d46-4fc4-973f-7662a7bb949e",
+    "data": [
+      {
+        "text": "Show me the complete network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b74ad9cb-42d0-4e78-9a8c-18ab47a8fc80",
+    "data": [
+      {
+        "text": "Show me the Delhi Metro Network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8a038688-9d6c-4e5c-9084-a08e09395483",
+    "data": [
+      {
+        "text": "Show me the full network",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "2d018b53-5ff5-49e8-b14d-aea9a89456f9",
+    "data": [
+      {
+        "text": "Show me a map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2df7686-0c63-49cc-a727-6220d7f3b442",
+    "data": [
+      {
+        "text": "Map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5038b89b-a6ee-450c-a284-23a9e1245e22",
+    "data": [
+      {
+        "text": "I want to see a full map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7db0a7b6-5075-4796-8193-10e5f78416bf",
+    "data": [
+      {
+        "text": "I want to see the metro map",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "description": "",
+  "language": "en",
+  "shortDescription": "",
+  "examples": "",
+  "linkToDocs": "",
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "project": "",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [
+      {
+        "intentId": "d930f284-8f6a-4dd7-8fbd-bb7762c49c49",
+        "signInRequired": false
+      },
+      {
+        "intentId": "a6b9de2b-59b4-4a6f-9204-7a061e8f1f3c",
+        "signInRequired": false
+      },
+      {
+        "intentId": "efe50ca2-1281-4fcd-83fd-b857f4cfd93b",
+        "signInRequired": false
+      }
+    ],
+    "systemIntents": [],
+    "endIntentIds": [
+      "a6b9de2b-59b4-4a6f-9204-7a061e8f1f3c",
+      "d930f284-8f6a-4dd7-8fbd-bb7762c49c49",
+      "ec0b2e29-8d5b-4802-88f1-4ef4deb43f02",
+      "2ce07414-0930-4686-92a0-677e1437e4de",
+      "93d857aa-a84f-4af5-bcde-35e737e248ef",
+      "9d682640-5baf-4070-8d10-74b555d4abd1"
+    ],
+    "oAuthLinking": {
+      "required": false,
+      "providerId": "",
+      "authorizationUrl": "",
+      "tokenUrl": "",
+      "scopes": "",
+      "privacyPolicyUrl": "",
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "env": "",
+    "protocolVersion": "V2",
+    "autoPreviewEnabled": false,
+    "isDeviceAgent": false
+  },
+  "defaultTimezone": "Asia/Colombo",
+  "webhook": {
+    "url": "https://us-central1-delhi-metro-8bf87.cloudfunctions.net/dialogflowFirebaseFulfillment",
+    "username": "",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": false,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "onePlatformApiVersion": "v2",
+  "analyzeQueryTextSentiment": false,
+  "enabledKnowledgeBaseNames": [],
+  "knowledgeServiceConfidenceAdjustment": -0.4,
+  "dialogBuilderMode": false,
+  "baseActionPackagesUrl": ""
+}

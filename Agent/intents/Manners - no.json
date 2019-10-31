@@ -1,0 +1,36 @@
+{
+  "id": "2ce07414-0930-4686-92a0-677e1437e4de",
+  "parentId": "efe50ca2-1281-4fcd-83fd-b857f4cfd93b",
+  "rootParentId": "efe50ca2-1281-4fcd-83fd-b857f4cfd93b",
+  "name": "Manners - no",
+  "auto": true,
+  "contexts": [
+    "Manners-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Manners.Manners-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Okay!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

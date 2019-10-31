@@ -1,0 +1,36 @@
+{
+  "id": "9d682640-5baf-4070-8d10-74b555d4abd1",
+  "parentId": "d930f284-8f6a-4dd7-8fbd-bb7762c49c49",
+  "rootParentId": "d930f284-8f6a-4dd7-8fbd-bb7762c49c49",
+  "name": "Router - no",
+  "auto": true,
+  "contexts": [
+    "Router-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Router.Router-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Okay, Goodbye!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
