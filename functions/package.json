@@ -1,6 +1,6 @@
 {
-  "name": "try-metro",
-  "description": "This is the default fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
+  "name": "delhi-metro",
+  "description": "Google Assistant action for Delhi Metro Rail",
   "version": "0.0.1",
   "private": true,
   "license": "Apache Version 2.0",
