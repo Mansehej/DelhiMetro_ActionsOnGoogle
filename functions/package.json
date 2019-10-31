@@ -1,5 +1,5 @@
 {
-  "name": "try-metro",
+  "name": "delhi-metro",
   "description": "This is the default fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
   "version": "0.0.1",
   "private": true,
