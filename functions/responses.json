@@ -1,0 +1,29 @@
+{
+    "welcome": [
+        "Welcome to Delhi Metro. How can I help you?",
+        "Welcome to Delhi Metro. How can I help you today?",
+        "Welcome to Delhi Metro. How may I assist you?",
+        "Welcome to Delhi Metro. How may I assist you today?",
+        "Welcome to Delhi Metro. How can I be of service?"
+    ],
+    "manners": [
+        "Kindly let people exit the train before entering it.",
+        "Do not enter the coach reserved for ladies if you are male.",
+        "Do not sit on seats reserved for ladies, the elderly, or the disabled.",
+        "Use headphones if listening to music on the Delhi Metro.",
+        "Eating and drinking are not allowed inside the metro train.",
+        "Please keep towards the center of the doors while deboarding the train.",
+        "Please stand towards the sides of the doors while waiting for passengers to deboard.",
+        "Please do not hang bags on your back inside Metro Trains.",
+        "Kindly stand behind the yellow line while waiting for a train on the platform."
+    ],
+    "exit": [
+        "Alright, have a nice day!",
+        "Okay, Goodbye!",
+        "Okay then, hope to see you again!",
+        "It was a pleasure helping you. Goodbye!",
+        "Alrightey, Good day!",
+        "Cool. Bye bye!",
+        "Alright! Hope to see you soon!"
+    ]
+}

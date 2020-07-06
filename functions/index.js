@@ -10,55 +10,13 @@ const functions = require('firebase-functions');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const axios = require('axios');
 
+const responses = require('./responses.json')
+
 process.env.DEBUG = 'dialogflow:debug';
-
-function exitResponses() {
-    var possibleResponse = [
-        'Alright, have a nice day!',
-        'Okay, Goodbye!',
-        'Okay then, hope to see you again!',
-        'It was a pleasure helping you. Goodbye!',
-        'Alrightey, Good day!',
-        'Cool. Bye bye!',
-        'Alright! Hope to see you soon!'
-    ];
-    var pick = Math.round(Math.random() * possibleResponse.length);
-    return possibleResponse[pick];
-}
-
 
 function firstUC(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-function metroManners() {
-    var possibleResponse = [
-        'Kindly let people exit the train before entering it.',
-        'Do not enter the coach reserved for ladies if you are male.',
-        'Do not sit on seats reserved for ladies, the elderly, or the disabled.',
-        'Use headphones if listening to music on the Delhi Metro.',
-        'Eating and drinking are not allowed inside the metro train.',
-        'Please keep towards the center of the doors while deboarding the train.',
-        'Please stand towards the sides of the doors while waiting for passengers to deboard.',
-        'Please do not hang bags on your back inside Metro Trains.',
-        'Kindly stand behind the yellow line while waiting for a train on the platform.'
-    ];
-    var pick = Math.round(Math.random() * possibleResponse.length);
-    return possibleResponse[pick];
-}
-
-function welcomeResponses() {
-    var possibleResponse = [
-        'Welcome to Delhi Metro. How can I help you?',
-        'Welcome to Delhi Metro. How can I help you today?',
-        'Welcome to Delhi Metro. How may I assist you?',
-        'Welcome to Delhi Metro. How may I assist you today?',
-        'Welcome to Delhi Metro. How can I be of service?'
-    ];
-    var pick = Math.round(Math.random() * possibleResponse.length);
-    return possibleResponse[pick];
-}
-
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
 
@@ -69,11 +27,15 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     var pretty;
     var speak
 
-
+    function responseChooser(context) {
+        var possibleResponse = responses[context]
+        var pick = Math.round(Math.random() * possibleResponse.length);
+        return possibleResponse[pick];
+    }
 
     function welcome(agent) {
         let conv = agent.conv();
-        var welcomeText = welcomeResponses()
+        var welcomeText = responseChooser('welcome')
         conv.ask(new SimpleResponse({
             speech: 'Welcome to Delhi Metro. How can I help you today?',
             text: 'Welcome to Delhi Metro. How can I help you today?'
@@ -181,11 +143,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
    function getManner(agent) {
        console.log("Inside Manners giver")
        let conv = agent.conv()
-       var out = metroManners();
-    //    conv.ask(new SimpleResponse({
-    //            text: "Release date: 12th October. You can try getting a route between stations, or asking for the metro map.",
-    //            speech: "This functionality shall be released by the 12th of October. Till then, you can try getting a route between stations, or asking for the metro map."
-    //        }))
+       var out = responseChooser('manners');
        conv.ask(new SimpleResponse({
            text: out,
            speech: out
@@ -220,7 +178,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
                 console.log('Inside Response');
                 let res = response.data;
                 outputHandler(res);
-                let stext = metroManners();
+                let stext = responseChooser('manners');
                 conv.ask(new SimpleResponse({
                     speech: speak,
                     text: stext
@@ -293,16 +251,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     function exiter(agent) {
         let conv = agent.conv();
-        var out = exitResponses();
+        var out = responseChooser('manners');
         conv.close(new SimpleResponse({
             speech: out,
             text: out
         }));
         agent.add(conv)
     }
-
-    //berkley max plank rutherford
-
 
     let intentMap = new Map();
     intentMap.set('Router', getRoute);
