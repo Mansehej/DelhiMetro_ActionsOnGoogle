@@ -251,7 +251,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
 
     function exiter(agent) {
         let conv = agent.conv();
-        var out = responseChooser('manners');
+        var out = responseChooser('exit');
         conv.close(new SimpleResponse({
             speech: out,
             text: out
