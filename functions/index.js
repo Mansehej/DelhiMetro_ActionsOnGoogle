@@ -115,10 +115,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             var line2 = branchRemover(res.line2[i])
             //lineEnds = 0 Handler 
             if (res.lineEnds[i] == 0)
-                pretty = pretty + ' ⟹ ' + ' __' + res.interchange[i] + '__  \n  \n';
+                pretty = pretty + ' ⟹ ' + ' __' + firstUC(res.interchange[i]) + '__  \n  \n';
             else
-                pretty = pretty + ' ⟹ ' + ' __' + res.interchange[i] + '__  \n(Towards ' + res.lineEnds[i] + ')  \n  \n';
-            pretty = pretty + '__' + res.interchange[i] + '__ ⟹ _' + firstUC(line2) + '_ ';
+                pretty = pretty + ' ⟹ ' + ' __' + firstUC(res.interchange[i]) + '__  \n(Towards ' + firstUC(res.lineEnds[i]) + ')  \n  \n';
+            pretty = pretty + '__' + firstUC(res.interchange[i]) + '__ ⟹ _' + firstUC(line2) + '_ ';
             if (line2 == '1.2km Skywalk')
                 speak = speak + res.interchange[i] + '. Then, walk 1.2 kilometers on the skywalk and go to ';
             else if (line2 == '300m Walkway/Free e-Rickshaw')
@@ -132,7 +132,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         if (res.lineEnds[res.lineEnds.length - 1] == 0)
             pretty = pretty + ' ⟹ **' + to + '**';
         else
-            pretty = pretty + ' ⟹ **' + to + '**' + '  \n(Towards ' + res.lineEnds[res.lineEnds.length - 1] + ')';
+            pretty = pretty + ' ⟹ **' + to + '**' + '  \n(Towards ' + firstUC(res.lineEnds[res.lineEnds.length - 1]) + ')';
         pretty = pretty + '  \n  \n  \n**Travel Time:** ';
         var time = Math.round(res.time);
         appendHours(time);
@@ -163,8 +163,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function getRoute(agent) {
         console.log("Inside Router");
         let conv = agent.conv();
-        from = agent.parameters.source[0].toUpperCase() + agent.parameters.source.slice(1);
-        to = agent.parameters.destination[0].toUpperCase() + agent.parameters.destination.slice(1);
+        from = firstUC(agent.parameters.source)
+        to = firstUC(agent.parameters.destination)
         console.log('destinationist: ' + to);
         console.log('sourcist: ' + from)
         if (from == to) {
