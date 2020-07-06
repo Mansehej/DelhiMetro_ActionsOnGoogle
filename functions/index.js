@@ -163,8 +163,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     function getRoute(agent) {
         console.log("Inside Router");
         let conv = agent.conv();
-        from = agent.parameters.source;
-        to = agent.parameters.destination;
+        from = agent.parameters.source[0].toUpperCase() + agent.parameters.source.slice(1);
+        to = agent.parameters.destination[0].toUpperCase() + agent.parameters.destination.slice(1);
         console.log('destinationist: ' + to);
         console.log('sourcist: ' + from)
         if (from == to) {
