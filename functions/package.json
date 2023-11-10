@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "actions-on-google": "^2.5.0",
-    "axios": "0.19.0",
+    "axios": "1.6.0",
     "dialogflow": "^0.6.0",
     "dialogflow-fulfillment": "^0.6.1",
     "firebase-admin": "^8.3.0",
